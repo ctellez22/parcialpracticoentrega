@@ -1,0 +1,13 @@
+<div class="container contenedor-animes">
+  <div class="row">
+    <p>La cantidad total de episodios es 2326 y el rating promedio es 8.03</p>
+    
+    <div class="col-4" *ngFor="let anime of animes">
+      <p>{{anime.name}}</p>
+      <img [src]="anime.img" alt="anime image" width="50px">
+      <p>⭐{{anime.Rating}} <b>Categoría:</b> {{anime.categorie}}</p>
+      <a [routerLink]="['/animes', animeDetail.id]" class="btn btn-primary">Ver detalles</a>
+      <hr>
+    </div>
+  </div>
+</div>

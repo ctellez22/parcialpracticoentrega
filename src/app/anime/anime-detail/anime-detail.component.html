@@ -1,0 +1,16 @@
+ <div class="container my-4">
+  <div class="card">
+    <img [src]="animeDetail.img" class="card-img-top" alt="{{ animeDetail.name }}">
+    <div class="card-body">
+      <h5 class="card-title">{{ animeDetail.name }}</h5>
+      <p class="card-text"><strong>Descripción:</strong> {{ animeDetail.description }}</p>
+      <p class="card-text"><strong>Calificación:</strong> {{ animeDetail.Rating }}</p>
+      <p class="card-text"><strong>Episodios:</strong> {{ animeDetail.episode }}</p>
+      <p class="card-text"><strong>Categoría:</strong> {{ animeDetail.categorie }}</p>
+      <p class="card-text"><strong>Estudio:</strong> {{ animeDetail.studio }}</p>
+    </div>
+    <div class="card-footer text-center">
+      <a [routerLink]="['/animes', anime.id]" class="btn btn-primary">Ver detalles</a>
+    </div>
+  </div>
+</div>
